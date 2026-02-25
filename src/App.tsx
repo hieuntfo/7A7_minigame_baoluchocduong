@@ -50,7 +50,7 @@ export default function App() {
     <main className="min-h-screen p-4 font-sans flex flex-col items-center justify-center">
       <div className="relative z-10 w-full max-w-4xl text-center">
         <h2 className="text-2xl font-bold text-white/80 drop-shadow-sm font-sans mb-2">Lớp 7A7 - Trường THCS Cầu Giấy</h2>
-        <h1 className="font-display text-7xl md:text-8xl text-white mb-4 uppercase" style={{ textShadow: '0 4px 0 #00000040' }}>Lớp Học Của Những Nụ Cười</h1>
+        <h1 className="font-display text-7xl md:text-8xl text-white mb-4 uppercase leading-tight" style={{ textShadow: '0 4px 0 #00000040' }}>Lớp Học Của Những<br/>Nụ Cười</h1>
         <p className="text-white/90 mb-8 text-lg leading-relaxed max-w-3xl mx-auto">Mỗi lựa chọn của bạn đều góp phần xây dựng một môi trường học đường tốt đẹp hơn.</p>
         <HappinessBar happiness={happiness} />
 
