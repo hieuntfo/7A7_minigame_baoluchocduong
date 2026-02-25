@@ -48,10 +48,10 @@ export default function App() {
 
   return (
     <main className="min-h-screen p-4 font-sans flex flex-col items-center justify-center">
-      <div className="relative z-10 w-full max-w-4xl text-center bg-white/20 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/30">
+      <div className="relative z-10 w-full max-w-4xl text-center bg-black/30 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
         <h2 className="text-2xl font-bold text-white drop-shadow-md">Lớp 7A7 - Trường THCS Cầu Giấy</h2>
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 font-serif drop-shadow-lg">Lớp Học Của Những Nụ Cười</h1>
-        <p className="text-white/90 mb-6 drop-shadow-md">Mỗi lựa chọn của bạn đều góp phần xây dựng một môi trường học đường tốt đẹp hơn.</p>
+        <p className="text-white/90 mb-6 drop-shadow-md text-lg leading-relaxed max-w-3xl mx-auto">Mỗi lựa chọn của bạn đều góp phần xây dựng một môi trường học đường tốt đẹp hơn.</p>
         <HappinessBar happiness={happiness} />
 
         <ScenarioCard

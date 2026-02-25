@@ -5,11 +5,11 @@ interface HappinessBarProps {
 }
 
 const HappinessBar: React.FC<HappinessBarProps> = ({ happiness }) => {
-  const barColor = happiness > 60 ? 'bg-green-500' : happiness > 30 ? 'bg-yellow-500' : 'bg-red-500';
+  const barColor = happiness > 60 ? 'bg-teal-400' : happiness > 30 ? 'bg-amber-400' : 'bg-pink-600';
 
   return (
     <div className="w-full max-w-md mx-auto my-6 relative">
-        <div className="w-full bg-black/20 rounded-full h-6 border-2 border-white/50 shadow-inner">
+        <div className="w-full bg-black/40 rounded-full h-6 border-2 border-white/50 shadow-inner">
             <div
                 className={`h-full rounded-full transition-all duration-500 ease-out ${barColor} border-b-4 border-white/50`}
                 style={{ width: `${happiness}%` }}
