@@ -48,10 +48,10 @@ export default function App() {
 
   return (
     <main className="min-h-screen p-4 font-sans flex flex-col items-center justify-center">
-      <div className="relative z-10 w-full max-w-4xl text-center bg-black/30 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/20">
-        <h2 className="text-2xl font-bold text-white drop-shadow-md">Lớp 7A7 - Trường THCS Cầu Giấy</h2>
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 font-serif drop-shadow-lg">Lớp Học Của Những Nụ Cười</h1>
-        <p className="text-white/90 mb-6 drop-shadow-md text-lg leading-relaxed max-w-3xl mx-auto">Mỗi lựa chọn của bạn đều góp phần xây dựng một môi trường học đường tốt đẹp hơn.</p>
+      <div className="relative z-10 w-full max-w-4xl text-center">
+        <h2 className="text-2xl font-bold text-white/80 drop-shadow-sm font-sans mb-2">Lớp 7A7 - Trường THCS Cầu Giấy</h2>
+        <h1 className="font-display text-7xl md:text-8xl text-white mb-4 uppercase" style={{ textShadow: '0 4px 0 #00000040' }}>Lớp Học Của Những Nụ Cười</h1>
+        <p className="text-white/90 mb-8 text-lg leading-relaxed max-w-3xl mx-auto">Mỗi lựa chọn của bạn đều góp phần xây dựng một môi trường học đường tốt đẹp hơn.</p>
         <HappinessBar happiness={happiness} />
 
         <ScenarioCard
@@ -60,8 +60,8 @@ export default function App() {
         />
 
         {feedback && (
-          <div key={feedback.key} className="mt-6 p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-md text-center text-gray-700 animate-fade-in">
-            <p className="font-medium italic">{feedback.message}</p>
+          <div key={feedback.key} className="mt-6 p-4 bg-white/50 rounded-xl shadow-md text-center text-gray-800 animate-fade-in">
+            <p className="font-bold italic">{feedback.message}</p>
           </div>
         )}
       </div>

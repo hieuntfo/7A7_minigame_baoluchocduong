@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Anton&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Be Vietnam Pro', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Nunito', sans-serif;
+  --font-display: 'Anton', sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #80a9de;
 }
 
 @layer utilities {
