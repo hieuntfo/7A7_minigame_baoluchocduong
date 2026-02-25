@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@layer utilities {
+    .animate-fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}
